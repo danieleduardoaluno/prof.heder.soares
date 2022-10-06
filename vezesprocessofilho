@@ -1,0 +1,12 @@
+int main(void)
+{
+  int id;
+  
+  id=fork();
+  id=fork();
+  
+  if(id==0)
+    printf("eu sou o processo filho\n");
+  else
+    printf("eu sou o processo pai\n");
+}
